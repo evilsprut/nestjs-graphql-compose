@@ -30,5 +30,11 @@
     "prettier": "^2.0.5",
     "reflect-metadata": "^0.1.13",
     "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^6.7.0 || ^7.0.0",
+    "@nestjs/core": "^6.7.0 || ^7.0.0",
+    "reflect-metadata": "^0.1.13",
+    "graphql-compose": "^7.14.4"
   }
 }
