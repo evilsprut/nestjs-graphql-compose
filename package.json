@@ -24,7 +24,7 @@
     "eslint": "7.1.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-import": "2.20.2",
-    "graphql-compose": "7.16.1",
+    "graphql-compose": "7.17.0",
     "husky": "4.2.5",
     "lint-staged": "10.2.7",
     "prettier": "2.0.5",
