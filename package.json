@@ -69,7 +69,7 @@
     "reflect-metadata": "0.1.13",
     "release-it": "13.7.0",
     "rxjs": "6.6.2",
-    "rxjs-compat": "6.5.4",
+    "rxjs-compat": "6.6.2",
     "typescript": "3.8.3"
   },
   "lint-staged": {
