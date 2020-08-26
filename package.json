@@ -63,7 +63,7 @@
     "eslint-plugin-import": "2.20.1",
     "graphql": "14.7.0",
     "graphql-compose": "7.19.4",
-    "husky": "4.2.3",
+    "husky": "4.2.5",
     "lint-staged": "10.2.13",
     "prettier": "2.0.2",
     "reflect-metadata": "0.1.13",
