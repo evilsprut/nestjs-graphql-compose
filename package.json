@@ -64,7 +64,7 @@
     "graphql": "14.7.0",
     "graphql-compose": "7.20.1",
     "husky": "4.2.5",
-    "lint-staged": "10.2.13",
+    "lint-staged": "10.3.0",
     "prettier": "2.1.1",
     "reflect-metadata": "0.1.13",
     "release-it": "13.7.0",
