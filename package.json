@@ -59,7 +59,7 @@
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
     "eslint": "6.8.0",
-    "eslint-config-prettier": "6.11.0",
+    "eslint-config-prettier": "6.15.0",
     "eslint-plugin-import": "2.22.0",
     "graphql": "14.7.0",
     "graphql-compose": "7.21.4",
