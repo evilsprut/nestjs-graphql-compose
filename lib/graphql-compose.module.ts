@@ -1,4 +1,4 @@
-import { DynamicModule, Module, Global, Provider } from '@nestjs/common';
+import { DynamicModule, Module, Global, Provider, Type } from '@nestjs/common';
 import { GRAPHQL_COMPOSE_MODULE_OPTIONS } from './graphql-compose.constants';
 import { SchemaComposerService } from './schema-composer.service';
 import {
@@ -38,11 +38,12 @@ export class GraphQLComposeModule {
     if (options.useExisting || options.useFactory) {
       return [this.createAsyncOptionsProvider(options)];
     }
+    const useClass = options.useClass as Type<GraphQLComposeOptionsFactory>;
     return [
       this.createAsyncOptionsProvider(options),
       {
-        provide: options.useClass,
-        useClass: options.useClass,
+        provide: useClass,
+        useClass: useClass,
       },
     ];
   }
@@ -57,11 +58,15 @@ export class GraphQLComposeModule {
         inject: options.inject || [],
       };
     }
+    // `as Type<GraphQLComposeOptionsFactory>` is a workaround for microsoft/TypeScript#31603
+    const inject = [
+      (options.useClass || options.useExisting) as Type<GraphQLComposeOptionsFactory>,
+    ];
     return {
       provide: GRAPHQL_COMPOSE_MODULE_OPTIONS,
       useFactory: async (optionsFactory: GraphQLComposeOptionsFactory) =>
         await optionsFactory.createGraphQLComposeOptions(),
-      inject: [options.useExisting || options.useClass],
+      inject,
     };
   }
 }
