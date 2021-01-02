@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# NestJS Telegraf
+# NestJS GraphQL Compose
 ![npm](https://img.shields.io/npm/dm/nestjs-graphql-compose)
 ![GitHub last commit](https://img.shields.io/github/last-commit/bukhalo/nestjs-graphql-compose)
 ![NPM](https://img.shields.io/npm/l/nestjs-graphql-compose)
